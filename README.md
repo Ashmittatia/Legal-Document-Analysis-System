@@ -1,8 +1,36 @@
 # 🧠 Legal Document Analysis System
 
-A Natural Language Processing (NLP)-based web application to **classify legal documents** and **extract key named entities** like names, dates, organizations, and more.
+A Natural Language Processing (NLP)-based web application to **classify legal documents** and **extract key named entities**.
 
 Built with **Python**, **Flask**, **SpaCy**, **NLTK**, and **scikit-learn**, this system helps automate legal document analysis — reducing manual review time and boosting productivity.
+
+---
+
+## ✅ What the Project Does
+
+- It takes the text of a legal document as input.
+
+- It uses NLP and machine learning to understand and analyze the text.
+
+- It predicts what type of legal document it is — for example: a contract, a will, or a legal compliance form.
+
+- It also highlights important entities like names, dates, and organizations.
+
+---
+
+## 📁 What Kind of Legal Documents It Understands
+
+It can classify documents into 5 types:
+
+-  Contracts
+
+-  Wills and Estate Planning Documents
+
+-  Business Formation Documents
+
+-  Legal Compliance Documents
+
+-  Intellectual Property Documents
 
 ---
 
