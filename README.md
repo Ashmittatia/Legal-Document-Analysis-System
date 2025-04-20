@@ -106,22 +106,22 @@ python app.py
 
 Visit http://127.0.0.1:5000 in your browser to use the system.
 
-✅ 92% classification accuracy on validation set
+#### ✅ 92% classification accuracy on validation set
 
-⏱ 40% reduction in manual document review time
+#### ⏱ 40% reduction in manual document review time
 
-💼 Improved productivity for legal analysts by 30%
+#### 💼 Improved productivity for legal analysts by 30%
 
-📸 Demo
+### 📸 Demo
 Coming soon...
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License.
 
-🤝 Contributing
+### 🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-💬 Contact
-Developed by Ashmit Tatia
+### 💬 Contact
+Developed by **Ashmit Tatia**
 Email: ashmit789@gmail.com
 GitHub: @Ashmittatia
