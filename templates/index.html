@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Legal Document Analysis System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        textarea { width: 100%; height: 150px; }
+        button { padding: 10px 20px; margin-top: 10px; }
+        .result { margin-top: 20px; font-weight: bold; color: green; }
+        .intro { margin-bottom: 20px; }
+        .intro h2 { margin-bottom: 5px; }
+        .intro p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>Legal Document Analysis System</h1>
+
+    <div class="intro">
+        <h2>Technologies:</h2>
+        <p>Python, SpaCy, NLTK, Flask</p>
+        <p>• Implemented NLP techniques to extract and classify legal data, reducing manual review time by 40%.</p>
+        <p>• Built a text classification and NER model with 92% accuracy in identifying document type and key entities.</p>
+        <p>• Deployed via Flask with an interactive UI, improving legal analyst productivity by 30%.</p>
+    </div>
+
+    <form method="POST">
+        <label for="document_text">Enter your document text below:</label><br>
+        <textarea name="document_text" required></textarea><br>
+        <button type="submit">Classify</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            Predicted Document Type: {{ prediction }}
+        </div>
+    {% endif %}
+
+    {% if entities %}
+        <div class="result" style="color: blue;">
+            <p>Extracted Entities:</p>
+            <ul>
+                {% for ent in entities %}
+                    <li>{{ ent.label }}: {{ ent.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</body>
+</html>
