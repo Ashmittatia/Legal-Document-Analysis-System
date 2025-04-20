@@ -30,35 +30,52 @@ Built with **Python**, **Flask**, **SpaCy**, **NLTK**, and **scikit-learn**, thi
 ## 📂 Project Structure
 
 LegalDocumentAnalyzer/
+
 ├── app.py                          # Flask web application
+
 ├── train_model.py                  # Script to train the ML model
+
 ├── requirements.txt                # Project dependencies
+
 ├── legal_documents_classification_excel.csv  # Dataset for training
+
 ├── model/                          # Folder to save model and vectorizer
-│   ├── classifier.pkl              # Trained classification model
-│   └── vectorizer.pkl              # TF-IDF vectorizer
+
+│     ├── classifier.pkl              # Trained classification model
+
+│     └── vectorizer.pkl              # TF-IDF vectorizer
+
 ├── templates/
-│   └── index.html                  # UI template for the web app
-└── utils/
-    └── preprocessing.py            # Text preprocessing and cleaning functions
+
+│     └── index.html                  # UI template for the web app
+
+└── utils/ 
+        └── preprocessing.py            # Text preprocessing and cleaning functions
 
 ---
 
 ## 🧪 How to Run Locally
 
 ### 1. Clone the Repository
-git clone https://github.com/your-username/legal-doc-analyzer.git
+
+git clone https://github.com/Ashmittatia/legal-doc-analyzer.git
+
 cd legal-doc-analyzer
 
 ### 2. Install Dependencies
+
 pip install -r requirements.txt
+
 python -m spacy download en_core_web_sm
 
 ### 3. Train the Model
+
 python train_model.py
 
 ### 4. Run the Web App
+
 python app.py
+
 Visit http://127.0.0.1:5000 in your browser to use the system.
 
 ✅ 92% classification accuracy on validation set
