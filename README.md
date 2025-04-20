@@ -58,7 +58,7 @@ LegalDocumentAnalyzer/
 
 ### 1. Clone the Repository
 
-git clone https://github.com/Ashmittatia/legal-doc-analyzer.git
+git clone https://github.com/Ashmittatia/Legal-Document-Analysis-System.git
 
 cd legal-doc-analyzer
 
